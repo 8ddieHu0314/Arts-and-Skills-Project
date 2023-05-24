@@ -1,0 +1,250 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+h1 {
+   font-size: 250%
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+/* img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+} */
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(.25px) translateX(10rem) translateY(0px);
+  z-index: 1;
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("Images/Slide\ 1.png");
+  z-index:2;
+}
+
+#title h1 {
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
+}
+
+#slide1:before {
+  background-image: url("Images/Slide\ 1.png");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide2 {
+  background-image:
+  url("Images/polluted-ocean.png");
+  z-index:2;
+}
+
+#slide3:before {
+  background-image: url("Images/polluted-ocean.png");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide4 {
+  background: #222;
+}
+
+.Mountains {
+  transform: translateZ(0px) translateX(0%) translateY(70px);
+  z-index: 555;
+}
+
+.Fish1 {
+  width: 60%;
+  height: 60%;
+  transform: translateZ(.4px) translateX(5rem) translateY(15rem);
+  z-index: 22;
+}
+
+.Ground {
+  transform: translateZ(0px) translateX(0px) translateY(0px);
+  z-index: 3;
+}
+
+.Reef {
+  transform: translateZ(.1px)  translateX(20px) translateY(0px);
+  z-index: 323;
+}
+
+.Sea-Grass1 {
+  transform: translateZ(.05px) translateX(1rem) translateY(60px);
+  z-index: 323;
+}
+
+.Sea-Grass2 {
+  transform: translateZ(.05px) translateX(15rem) translateY(1rem);
+  z-index: 3232;
+}
+
+.Sea-Grass3 {
+  transform: translateZ(.1px) translateX(30rem) translateY(2rem);
+  z-index: 3434;
+}
+
+.Rock {
+  transform: translateZ(.05px) translateX(1rem) translateY(10px);
+  z-index: 1;
+}
+
+.Plastic-bag {
+  transform: translateZ(.15px) translateX(-3rem) translateY(10px);
+}
+
+.Plastic-bag2 {
+  transform: rotate(0.1turn) translateZ(.3px) translateX(-10rem) translateY(10rem) scale(0.75,0.75);
+  z-index: 321;
+}
+
+.Plastic-bag3 {
+  transform: rotate(0.05turn) translateZ(.25px) translateX(-21rem) translateY(11rem) scale(0.6,0.6);
+  z-index: 321;
+}
+
+.Plastic-bag4 {
+  transform: rotate(0.3turn) translateZ(.2px) translateX(-10rem) translateY(10rem) scale(1,1);
+  z-index: 321;
+}
+
+.Plastic-bag5 {
+  transform: rotate(-0.1turn) translateZ(.1px) translateX(-20rem) translateY(20rem) scale(1,1);
+  z-index: 321;
+}
+
+.Plastic-bag6 {
+  transform: rotate(-0.2turn) translateZ(.1px) translateX(-40rem) translateY(0rem) scale(1,1);
+  z-index: 321;
+}
+
+.Rock2 {
+  transform: translateZ(0px) translateX(0rem) translateY(0px);
+  z-index: 43254354;
+}
+
+.Rock3 {
+  transform: translateZ(0px) translateX(0rem) translateY(0px);
+  z-index: 44444444444;
+  background-image: linear-gradient(to bottom, #5388a0, #3a6071);
+  opacity: 0.5;
+}
+
+.School-of-Fish {
+  opacity: 0.5;
+  z-index: 0;
+  transform: scale(0.75,0.75) translateZ(.1px);
+}
+
+.Dead-Fish {
+  transform: translateZ(.1px) translateX(10rem);
+}
+
+.Rock4 {
+  transform: translateZ(0px) translateX(0rem) translateY(0px);
+  z-index: 44444444445;
+}
+
+.Plastic-Bottle1 {
+  transform: translateZ(.372px) translateX(-10rem) translateY(-10rem) scale(0.3,0.3) rotate(0.1turn);
+}
+
+.Plastic-Bottle2 {
+  transform: translateZ(.445px) translateX(-10rem) translateY(0rem) scale(0.3,0.3) rotate(0.2turn);
+}
+
+.Plastic-Bottle3 {
+  transform: translateZ(.232px) translateX(17rem) translateY(8rem) scale(0.3,0.3) rotate(-0.6turn);
+}
+
+.Shark1 {
+  transform: scaleX(-1) scale(0.8,0.8) translateY(0rem) translateX(60rem) translateZ(0.1px);
+}
+
+.Tire {
+  transform: scale(0.6,0.6) translateY(-30rem) translateX(10rem) translateZ(.2px) rotate(0.2turn);
+}
+
+.Tire1 {
+  transform: scale(0.6,0.6) translateY(12rem) translateX(-10rem) translateZ(.05px);
+  z-index: 4325;
+}
